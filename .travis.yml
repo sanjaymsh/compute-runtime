@@ -10,9 +10,6 @@ notifications:
     email:
         recipients:
             - compute-runtime@intel.com
-arch:
-  - amd64
-  - ppc64le
 matrix:
     include:
         - os: linux
@@ -67,6 +64,78 @@ matrix:
           compiler: gcc
           env: BUILD_OS=ubuntu-20.04 COMPILER=gcc GEN=gen-11-l0
         - os: linux
+          compiler: gcc
+          env: BUILD_OS=ubuntu-20.04 COMPILER=gcc GEN=gen-12-l0
+        - os: linux
+          arch: ppc64le
+          compiler: clang
+          env: BUILD_OS=ubuntu-18.04 COMPILER=clang-8
+        - os: linux
+          arch: ppc64le
+          compiler: clang
+          env: BUILD_OS=ubuntu-18.04 COMPILER=clang-8-l0
+        - os: linux
+          arch: ppc64le
+          compiler: gcc
+          env: BUILD_OS=ubuntu-18.04 COMPILER=gcc GEN=gen-8
+        - os: linux
+          arch: ppc64le
+          compiler: gcc
+          env: BUILD_OS=ubuntu-18.04 COMPILER=gcc GEN=gen-9
+        - os: linux
+          arch: ppc64le
+          compiler: gcc
+          env: BUILD_OS=ubuntu-18.04 COMPILER=gcc GEN=gen-11
+        - os: linux
+          arch: ppc64le
+          compiler: gcc
+          env: BUILD_OS=ubuntu-18.04 COMPILER=gcc GEN=gen-12
+        - os: linux
+          arch: ppc64le
+          compiler: gcc
+          env: BUILD_OS=ubuntu-18.04 COMPILER=gcc GEN=gen-9-l0
+        - os: linux
+          arch: ppc64le
+          compiler: gcc
+          env: BUILD_OS=ubuntu-18.04 COMPILER=gcc GEN=gen-11-l0
+        - os: linux
+          arch: ppc64le
+          compiler: gcc
+          env: BUILD_OS=ubuntu-18.04 COMPILER=gcc GEN=gen-12-l0
+        - os: linux
+          arch: ppc64le
+          compiler: clang
+          env: BUILD_OS=ubuntu-20.04 COMPILER=clang
+        - os: linux
+          arch: ppc64le
+          compiler: clang
+          env: BUILD_OS=ubuntu-20.04 COMPILER=clang-l0
+        - os: linux
+          arch: ppc64le
+          compiler: gcc
+          env: BUILD_OS=ubuntu-20.04 COMPILER=gcc GEN=gen-8
+        - os: linux
+          arch: ppc64le
+          compiler: gcc
+          env: BUILD_OS=ubuntu-20.04 COMPILER=gcc GEN=gen-9
+        - os: linux
+          arch: ppc64le
+          compiler: gcc
+          env: BUILD_OS=ubuntu-20.04 COMPILER=gcc GEN=gen-11
+        - os: linux
+          arch: ppc64le
+          compiler: gcc
+          env: BUILD_OS=ubuntu-20.04 COMPILER=gcc GEN=gen-12
+        - os: linux
+          arch: ppc64le
+          compiler: gcc
+          env: BUILD_OS=ubuntu-20.04 COMPILER=gcc GEN=gen-9-l0
+        - os: linux
+          arch: ppc64le
+          compiler: gcc
+          env: BUILD_OS=ubuntu-20.04 COMPILER=gcc GEN=gen-11-l0
+        - os: linux
+          arch: ppc64le
           compiler: gcc
           env: BUILD_OS=ubuntu-20.04 COMPILER=gcc GEN=gen-12-l0
 
