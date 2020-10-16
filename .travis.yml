@@ -10,6 +10,9 @@ notifications:
     email:
         recipients:
             - compute-runtime@intel.com
+arch:
+  - amd64
+  - ppc64le
 matrix:
     include:
         - os: linux
